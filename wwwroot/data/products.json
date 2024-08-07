@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "BookName": "The Great Gatsby",
+    "Author": "F. Scott Fitzgerald"
+  },
+  {
+    "Id": 2,
+    "BookName": "Harry Potter And The Sorcerer's Stone",
+    "Author": "J. K. Rowling"
+  },
+  {
+    "Id": 3,
+    "BookName": "Ulysses",
+    "Author": "James Joyce"
+  },
+  {
+    "Id": 4,
+    "BookName": "Nineteen Eighty Four",
+    "Author": "George Orwell"
+  },
+  {
+    "Id": 5,
+    "BookName": "Lolita",
+    "Author": "Vladimir Nabokov"
+  },
+  {
+    "Id": 6,
+    "BookName": "The Lord of the Rings",
+    "Author": "J. R. R. Tolkien"
+  },
+  {
+    "Id": 7,
+    "BookName": "Middle of the Night",
+    "Author": "Riley Sager"
+  }
+]

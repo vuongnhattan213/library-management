@@ -1,0 +1,49 @@
+﻿@model IEnumerable<User>
+@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Users List</h1>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <a href="/User/Create" class="btn btn-primary">Create New</a>
+        </div>
+        <div class="col-md-6">
+            <form method="get" action="/User/Index" class="d-flex">
+                <div class="input-group">
+                    <input type="text" id="searchId" name="searchId" class="form-control" placeholder="Search by ID" />
+                    <button type="submit" class="btn btn-outline-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.FullName</td>
+                    <td>@user.Email</td>
+                    <td>@user.Username</td>
+                    <td>
+                        <a href="/User/Edit/@user.Id" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="/User/Delete/@user.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

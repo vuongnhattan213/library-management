@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wqAkNXhL3UhvETquBT3vYUph2u1HjsexA7Pd8DU85GbdxmTrMsAyDgdN2JyyzfSRN+xMfqUw3sKQf8pRGi6BYg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\NHATTAN\\OneDrive\\Desktop\\Kiến trúc Phần mềm\\Final_Project\\library_management_1\\library_management_1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NHATTAN\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

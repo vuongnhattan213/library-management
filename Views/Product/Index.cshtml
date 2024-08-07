@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Products List</h1>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <a href="/Product/Create" class="btn btn-primary">Create New</a>
+        </div>
+        <div class="col-md-6">
+            <form method="get" action="/Product/Index" class="d-flex">
+                <div class="input-group">
+                    <input type="text" id="searchId" name="searchId" class="form-control" placeholder="Search by ID" />
+                    <button type="submit" class="btn btn-outline-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.BookName</td>
+                    <td>@product.Author</td>
+                    <td>
+                        <a href="/Product/Edit/@product.Id" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="/Product/Delete/@product.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
